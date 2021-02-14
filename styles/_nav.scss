@@ -1,17 +1,99 @@
-.main-nav__list {
+.main-nav {
+  position: relative;
+  width: 96%;
+  background-color: $black-color;
   display: flex;
-  margin: 0;
+  justify-content: space-between;
+  padding: 7px 10px;
+  align-items: center;
+  border: 1px solid $main-color;
+  z-index: 4;
 }
-.main-nav__list-item {
-  text-decoration: none;
+.main-nav::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  left: 0;
+  width: 100%;
+  background-color: $black-color;
+  border: 1px solid $main-color;
+  z-index: 3;
+}
+.main-nav__list {
+  position: fixed;
   list-style-type: none;
-  padding-right: 64px;
+  color: $white-color;
+  top: -100%;
+  left: 0;
+  width: 80%;
+  height: 22%;
+  transition: all 0.3s ease 0s;
+  background-color: $black-color;
+  display: flex;
+  align-self: center;
+  margin: 0;
+  padding: 60px 0 0 10%;
+  margin: 0 10%;
+  display: block;
 }
-.main-nav__list-item:last-child {
-  padding-right: 0;
+.main-nav__list.active {
+  top: 0;
+}
+@include media-breakpoint-up(md) {
+  .collapse {
+    display: flex;
+  }
+  .main-nav::before {
+    display: none;
+  }
+  .menu-btn {
+    display: none !important;
+  }
+  .menu-btn__burger {
+    display: none;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: $black-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border: none;
+  }
+  .main-nav__list {
+    position: unset;
+    top: unset;
+    left: unset;
+    width: unset;
+    height: unset;
+    transition: unset;
+    background-color: unset;
+    display: flex;
+    margin: 0;
+    padding: unset;
+  }
+  .main-nav__list-item {
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 64px;
+  }
+  .main-nav__list-item:last-child {
+    padding-right: 0;
+  }
+  .main-nav__link {
+    font-family: Bison;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: $white-color;
+  }
 }
 .menu-btn {
   position: relative;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;

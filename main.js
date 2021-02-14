@@ -9,3 +9,8 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+$(document).ready(function () {
+  $('.menu-btn').click(function (event) {
+    $('.menu-btn, .main-nav__list').toggleClass('active');
+  });
+});
