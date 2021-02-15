@@ -28,11 +28,11 @@
   transition: width 0.3s;
 }
 .main-nav__link:hover::after {
-  width: 14%;
+  width: 18%;
   transition: width 0.3s;
 }
 .main-nav__link:focus::after {
-  width: 14%;
+  width: 18%;
   transition: width 0.3s;
 }
 .main-title {
@@ -43,6 +43,25 @@
   line-height: 52px;
   color: $main-color;
 }
+.hero-section__title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 87px;
+  color: $main-color;
+}
+.hero-section__first-text {
+  font-family: Bison;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: $white-color;
+}
+.hero-section__second-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white-color;
+}
 @include media-breakpoint-up(md) {
   .main-nav__link:hover::after {
     width: 100%;
@@ -52,4 +71,34 @@
     width: 100%;
     transition: width 0.3s;
   }
+}
+.header-general__first-group-text {
+  font-family: Bison;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white-color;
+  opacity: 0.5;
+}
+.header-general__first-group-text-jost {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white-color;
+  opacity: 0.5;
+}
+.header-general__first-group-text-jost-green {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $main-color;
+  padding-bottom: 24px;
+}
+.header-general__second-text {
+  margin: 0;
+  font-family: Bison;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $main-color;
 }

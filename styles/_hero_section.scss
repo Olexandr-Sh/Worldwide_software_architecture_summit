@@ -1,3 +1,12 @@
 .hero-section {
-  padding-top: 120px;
+  padding-top: 8px;
+  background-color: $black-color;
+}
+.hero-section__first-text {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.hero-section__second-text {
+  text-align: center;
+  padding-bottom: 30px;
 }

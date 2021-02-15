@@ -1,7 +1,12 @@
 .main-header {
   width: 100%;
   padding: 10px;
-  background: url(../image/background/background_1x.jpg);
+  background: linear-gradient(
+      180deg,
+      rgba(23, 23, 22, 0) 57.87%,
+      #171716 79.58%
+    ),
+    url(../image/background/background_1x.jpg);
 }
 .visible-logo {
   display: none;
@@ -20,6 +25,25 @@
 }
 .main-title {
   padding-top: 20px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+.header-general__first-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header-general__first-group-text {
+  padding-top: 24px;
+  padding-bottom: 2px;
+}
+.header-general__second-text {
+  padding: 6px 8px;
+  border: 1px solid $main-color;
+}
+.hero-section__title {
+  padding-top: 90px;
+  margin: 0;
   text-align: center;
 }
 @include media-breakpoint-up(md) {
