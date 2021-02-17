@@ -102,3 +102,21 @@
   line-height: 24px;
   color: $main-color;
 }
+.title-styles {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 65px;
+  color: $white-color;
+  margin: 0;
+}
+.title-styles:hover,
+.title-styles:focus {
+  color: $main-color;
+}
+.items-comment {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: $white-color;
+}

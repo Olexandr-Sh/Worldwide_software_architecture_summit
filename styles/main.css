@@ -2000,6 +2000,27 @@ button {
   color: #73f9bc;
 }
 
+.title-styles {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 65px;
+  color: #fff;
+  margin: 0;
+}
+
+.title-styles:hover,
+.title-styles:focus {
+  color: #73f9bc;
+}
+
+.items-comment {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+}
+
 .header-general__first-group-btn {
   font-family: Bison;
   font-weight: 700;
@@ -2302,5 +2323,16 @@ button {
 .hero-section__second-text {
   text-align: center;
   padding-bottom: 30px;
+}
+
+.hero-section__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
