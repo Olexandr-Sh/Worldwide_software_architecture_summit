@@ -39,7 +39,17 @@
 .main-nav__list.active {
   top: 0;
 }
+@include media-breakpoint-up(sm) {
+  .main-nav__list {
+    left: 10%;
+    width: 60%;
+  }
+}
 @include media-breakpoint-up(md) {
+  .main-nav__list {
+    left: 10%;
+    width: 80%;
+  }
   .collapse {
     display: flex;
   }
@@ -53,9 +63,7 @@
     display: none;
   }
   .main-nav {
-    position: absolute;
     top: 0;
-    width: 100%;
     background-color: $black-color;
     display: flex;
     justify-content: space-between;

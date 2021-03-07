@@ -24,70 +24,76 @@
     <header class="main-header">
       <div class="container">
         <div class="header-general">
-          <nav class="main-nav">
-            <a href="#" class="page-logo visible-logo-mobile">
-              <img src="./image/icon/mobile_icon.svg" alt="geekle-logo" />
-            </a>
-            <a href="#" class="page-logo visible-logo">
-              <img src="./image/icon/icon.svg" alt="geekle-logo" />
-            </a>
-            <div class="collapse navbar-collapse">
-              <ul class="main-nav__list">
-                <li class="main-nav__list-item">
-                  <a href="#" class="main-nav__link">AGENDA</a>
-                </li>
-                <li class="main-nav__list-item">
-                  <a href="#" class="main-nav__link">TICKETS</a>
-                </li>
-                <li class="main-nav__list-item">
-                  <a href="#" class="main-nav__link">TEAM</a>
-                </li>
-              </ul>
-            </div>
-            <div class="menu-btn">
-              <div class="menu-btn__burger"></div>
-            </div>
-          </nav>
-          <h1 class="main-title">WORLDWIDE SOFTWARE ARCHITECTURE SUMMIT</h1>
-          <picture>
-            <source
-              srcset="
-                ./image/thinking_man/thinking_man_320_(285x329)_1x.webp 1x,
-                ./image/thinking_man/thinking_man_320_(570x657)_2x.webp 2x
-              "
-              type="image/webp" />
-            <source
-              srcset="
-                ./image/thinking_man/thinking_man_320_(285x329)_1x.png 1x,
-                ./image/thinking_man/thinking_man_320_(570x657)_2x.png 2x
-              "
-              type="image/png" />
-            <source
-              srcset="
-                ./image/thinking_man/thinking_man_(536x618)_1x.webp   1x,
-                ./image/thinking_man/thinking_man_(1072x1236)_2x.webp 2x
-              "
-              type="image/webp" />
-            <source
-              srcset="
-                ./image/thinking_man/thinking_man_(536x618)_1x.png   1x,
-                ./image/thinking_man/thinking_man_(1072x1236)_2x.png 2x
-              "
-              type="image/png" />
-            <img
-              class="thinking-man-image"
-              src="./image/thinking_man/hinking_man_(536x618)_1x.png"
-              alt="thinking man"
-          /></picture>
+          <div class="header-general__black-rectangle">
+            <nav class="main-nav container">
+              <a href="#" class="page-logo visible-logo-mobile">
+                <img src="./image/icon/mobile_icon.svg" alt="geekle-logo" />
+              </a>
+              <a href="#" class="page-logo visible-logo">
+                <img src="./image/icon/icon.svg" alt="geekle-logo" />
+              </a>
+              <div class="collapse navbar-collapse">
+                <ul class="main-nav__list">
+                  <li class="main-nav__list-item">
+                    <a href="#" class="main-nav__link">AGENDA</a>
+                  </li>
+                  <li class="main-nav__list-item">
+                    <a href="#" class="main-nav__link">TICKETS</a>
+                  </li>
+                  <li class="main-nav__list-item">
+                    <a href="#" class="main-nav__link">TEAM</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+              </div>
+            </nav>
+          </div>
+          <div class="header-general__picture-group">
+            <h1 class="main-title">WORLDWIDE SOFTWARE ARCHITECTURE SUMMIT</h1>
+            <picture class="main-picture">
+              <source
+                srcset="
+                  ./image/thinking_man/thinking_man_320_(285x329)_1x.webp 1x,
+                  ./image/thinking_man/thinking_man_320_(570x657)_2x.webp 2x
+                "
+                type="image/webp" />
+              <source
+                srcset="
+                  ./image/thinking_man/thinking_man_320_(285x329)_1x.png 1x,
+                  ./image/thinking_man/thinking_man_320_(570x657)_2x.png 2x
+                "
+                type="image/png" />
+              <source
+                srcset="
+                  ./image/thinking_man/thinking_man_(536x618)_1x.webp   1x,
+                  ./image/thinking_man/thinking_man_(1072x1236)_2x.webp 2x
+                "
+                type="image/webp" />
+              <source
+                srcset="
+                  ./image/thinking_man/thinking_man_(536x618)_1x.png   1x,
+                  ./image/thinking_man/thinking_man_(1072x1236)_2x.png 2x
+                "
+                type="image/png" />
+              <img
+                class="thinking-man-image"
+                src="./image/thinking_man/hinking_man_(536x618)_1x.png"
+                alt="thinking man"
+            /></picture>
+          </div>
           <div class="header-general__first-group">
             <button class="header-general__first-group-btn">BUY TICKET</button>
-            <span class="header-general__first-group-text">DIVE INTO</span>
-            <span class="header-general__first-group-text-jost"
-              >Cloud Architecture Optimization:</span
-            >
-            <span class="header-general__first-group-text-jost-green"
-              >Automation&Testing</span
-            >
+            <div>
+              <span class="header-general__first-group-text">DIVE INTO</span>
+              <span class="header-general__first-group-text-jost"
+                >Cloud Architecture Optimization:</span
+              >
+              <span class="header-general__first-group-text-jost-green"
+                >Automation&Testing</span
+              >
+            </div>
           </div>
           <div class="header-general__second">
             <p class="header-general__second-text">

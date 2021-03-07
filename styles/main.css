@@ -2042,6 +2042,12 @@ button {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .header-general__first-group-btn {
+    margin-top: 0;
+  }
+}
+
 .main-header {
   width: 100%;
   padding: 10px;
@@ -2094,6 +2100,29 @@ button {
           align-items: flex-start;
 }
 
+.header-general__black-rectangle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-general__picture-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header-general__first-group-text {
   padding-top: 24px;
   padding-bottom: 2px;
@@ -2111,8 +2140,28 @@ button {
 }
 
 @media (min-width: 768px) {
+  .header-general__black-rectangle {
+    width: 100%;
+    background-color: #171716;
+    position: absolute;
+    top: 0;
+  }
+  .header-general__picture-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 146px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .main-title {
-    padding-top: 100px;
+    padding: 0 0 30px;
+    text-align: left;
   }
   .visible-logo-mobile {
     display: none;
@@ -2121,6 +2170,11 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .header-general__first-group {
+    position: absolute;
+    top: 40%;
+    left: 8%;
   }
 }
 
@@ -2179,7 +2233,18 @@ button {
   top: 0;
 }
 
+@media (min-width: 576px) {
+  .main-nav__list {
+    left: 10%;
+    width: 60%;
+  }
+}
+
 @media (min-width: 768px) {
+  .main-nav__list {
+    left: 10%;
+    width: 80%;
+  }
   .collapse {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2195,9 +2260,7 @@ button {
     display: none;
   }
   .main-nav {
-    position: absolute;
     top: 0;
-    width: 100%;
     background-color: #171716;
     display: -webkit-box;
     display: -ms-flexbox;

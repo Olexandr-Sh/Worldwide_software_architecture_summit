@@ -16,3 +16,8 @@
 .header-general__first-group-btn:active {
   color: $white-color;
 }
+@include media-breakpoint-up(md) {
+  .header-general__first-group-btn {
+    margin-top: 0;
+  }
+}
