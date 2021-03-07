@@ -19,5 +19,7 @@
 @include media-breakpoint-up(md) {
   .header-general__first-group-btn {
     margin-top: 0;
+    font-size: 28px;
+    padding: 2px 58px;
   }
 }

@@ -43,6 +43,10 @@
   flex-direction: column;
   align-items: center;
 }
+.header-general__first-group-item {
+  display: flex;
+  flex-direction: column;
+}
 .header-general__first-group-text {
   padding-top: 24px;
   padding-bottom: 2px;
@@ -80,8 +84,18 @@
     display: flex;
   }
   .header-general__first-group {
+    align-self: flex-start;
     position: absolute;
     top: 40%;
-    left: 8%;
+    flex-direction: column-reverse;
+  }
+  .header-general__first-group-text {
+    padding: 0 0 10px;
+  }
+  .header-general__first-group-text-jost-green {
+    padding-bottom: 10px;
+  }
+  .header-general__second {
+    width: 89%;
   }
 }

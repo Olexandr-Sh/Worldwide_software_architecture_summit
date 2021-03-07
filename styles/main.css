@@ -2021,6 +2021,25 @@ button {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .header-general__first-group-text-jost {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header-general__first-group-text-jost-green {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header-general__second-text {
+    font-size: 36px;
+    line-height: 48px;
+    background-color: #171716;
+    margin: -40px;
+    text-align: center;
+    padding: 0;
+  }
+}
+
 .header-general__first-group-btn {
   font-family: Bison;
   font-weight: 700;
@@ -2045,6 +2064,8 @@ button {
 @media (min-width: 768px) {
   .header-general__first-group-btn {
     margin-top: 0;
+    font-size: 28px;
+    padding: 2px 58px;
   }
 }
 
@@ -2123,6 +2144,16 @@ button {
           align-items: center;
 }
 
+.header-general__first-group-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .header-general__first-group-text {
   padding-top: 24px;
   padding-bottom: 2px;
@@ -2172,9 +2203,23 @@ button {
     display: flex;
   }
   .header-general__first-group {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     position: absolute;
     top: 40%;
-    left: 8%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .header-general__first-group-text {
+    padding: 0 0 10px;
+  }
+  .header-general__first-group-text-jost-green {
+    padding-bottom: 10px;
+  }
+  .header-general__second {
+    width: 89%;
   }
 }
 
