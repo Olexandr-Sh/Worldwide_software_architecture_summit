@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Bison";
+  src: local("☺"), url("../fonts/bison-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+.main-nav__link {
+  font-family: Bison;
+  font-weight: 700;
+  color: $white-color;
+  font-size: 20px;
+  line-height: 26px;
+}
+.main-nav__link:hover {
+  text-decoration: none;
+  color: $white-color;
+}
+.main-nav__link:focus {
+  text-decoration: none;
+  color: $white-color;
+}
+.main-nav__link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: $white-color;
+  transition: width 0.3s;
+}
+.main-nav__link:hover::after {
+  width: 18%;
+  transition: width 0.3s;
+}
+.main-nav__link:focus::after {
+  width: 18%;
+  transition: width 0.3s;
+}
+.main-title {
+  font-family: Bison;
+  font-weight: 700;
+  margin: 0;
+  font-size: 43px;
+  line-height: 52px;
+  color: $main-color;
+}
+.hero-section__title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 87px;
+  color: $main-color;
+}
+.hero-section__first-text {
+  font-family: Bison;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: $white-color;
+}
+.hero-section__second-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white-color;
+}
+@include media-breakpoint-up(md) {
+  .main-nav__link:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+  .main-nav__link:focus::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+}
+.header-general__first-group-text {
+  font-family: Bison;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white-color;
+  opacity: 0.5;
+}
+.header-general__first-group-text-jost {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white-color;
+  opacity: 0.5;
+}
+.header-general__first-group-text-jost-green {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $main-color;
+  padding-bottom: 24px;
+}
+.header-general__second-text {
+  margin: 0;
+  font-family: Bison;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $main-color;
+}
+.title-styles {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 65px;
+  color: $white-color;
+  margin: 0;
+}
+.title-styles:hover,
+.title-styles:focus {
+  color: $main-color;
+}
+.items-comment {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: $white-color;
+}
+@include media-breakpoint-up(md) {
+  .header-general__first-group-text-jost {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header-general__first-group-text-jost-green {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header-general__second-text {
+    font-size: 36px;
+    line-height: 48px;
+    background-color: $black-color;
+    margin: -40px;
+    text-align: center;
+    padding: 0;
+  }
+}

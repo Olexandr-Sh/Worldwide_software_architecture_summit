@@ -1,0 +1,17 @@
+.hero-section {
+  padding-top: 8px;
+  background-color: $black-color;
+}
+.hero-section__first-text {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.hero-section__second-text {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.hero-section__items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

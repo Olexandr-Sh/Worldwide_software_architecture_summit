@@ -1,0 +1,25 @@
+.header-general__first-group-btn {
+  font-family: Bison;
+  font-weight: 700;
+  background-color: $white-color;
+  color: $black-color;
+  font-size: 40px;
+  line-height: 48px;
+  padding: 4px 82px;
+  margin-top: -50px;
+}
+.header-general__first-group-btn:hover,
+.header-general__first-group-btn:focus {
+  background-color: $black-color;
+  color: $main-color;
+}
+.header-general__first-group-btn:active {
+  color: $white-color;
+}
+@include media-breakpoint-up(md) {
+  .header-general__first-group-btn {
+    margin-top: 0;
+    font-size: 28px;
+    padding: 2px 58px;
+  }
+}
